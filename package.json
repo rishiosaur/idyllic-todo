@@ -14,7 +14,8 @@
 		"typescript": "^4.1.3"
 	},
 	"scripts": {
-		"start": "ts-node src/index.ts",
+		"start:nocompile": "NODE_ENV=production node dist/index.js",
+		"start": "NODE_ENV=production tsc --build && NODE_ENV=production node dist/index.js",
 		"build": "tsc --build",
 		"dev": "nodemon src/index.ts"
 	}
