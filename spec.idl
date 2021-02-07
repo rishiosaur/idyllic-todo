@@ -1,15 +1,12 @@
 define handlers { getAllTodos, getOneTodo, addTodo, completeTodo } from "./src/api"
 
 route "/" {
-
   get {
     getAllTodos
-  }
-  
+  } 
 }
 
 route "/todos" {
-
   get {
     getAllTodos
   }
