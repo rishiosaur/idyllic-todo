@@ -23,3 +23,5 @@ $ cd idyllic-todo
 $ yarn
 $ yarn run start
 ```
+
+After the first compilation, you can use `yarn run start:nocompile` to start up even faster.
