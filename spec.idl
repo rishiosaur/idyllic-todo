@@ -1,4 +1,4 @@
-define handlers { getAllTodos, getOneTodo, addTodo, completeTodo } from "./src/api"
+define handlers { getAllTodos, getOneTodo, addTodo, completeTodo } from "./src/api.ts"
 
 route "/" {
   get {
