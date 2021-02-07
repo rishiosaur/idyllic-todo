@@ -1,0 +1,29 @@
+define handlers { getAllTodos, getOneTodo, addTodo, completeTodo } from "./dist/api"
+
+route "/" {
+  get {
+    getAllTodos
+  } 
+}
+
+route "/todos" {
+  get {
+    getAllTodos
+  }
+
+  post {
+    addTodo
+  }
+}
+
+route "/todos/{id}" {
+  get {
+    getOneTodo
+  }
+}
+
+route "/complete/{id}" {
+  post {
+    completeTodo
+  }
+}
